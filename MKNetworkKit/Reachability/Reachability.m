@@ -154,6 +154,7 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
         CFRelease(self.reachabilityRef);
         self.reachabilityRef = nil;
     }
+    [super dealloc];
 #ifdef DEBUG
     NSLog(@"Reachability: dealloc");
 #endif
